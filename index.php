@@ -21,7 +21,10 @@
   echo "<hr/>";
   echo "<h2>My name is " . $name . "</h2>";
   echo "<p>I was born in " . $yearBorn . "</p>";
-  echo "I am " . $age . " years old."
+  echo "I am " . strtoupper($age . " years old.");
+echo "<br>";
+  echo "My name spelled Backwards: ";
+  echo strtoupper($name[7]) . $name[6] . $name[5] . $name[4] . $name[3] . $name[2] . $name[1] . strtolower($name[0]);
   ?>
 </body>
 </html>

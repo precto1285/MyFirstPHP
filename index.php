@@ -8,10 +8,20 @@
 </head>
 <body>
   <?php 
-  $statement= "<h1>Hello World!</h1>";
-  $number=1978;
+  // String Variable
+  $statement = "<h1>Hello World!</h1>";
+  // Number Variable
+  $yearBorn = 1978;
+  $currentYear = 2019;
+  $age = $currentYear - $yearBorn;
+
+  $name = "Philippe";
+
   echo $statement;
-  echo "I was born in " . $number;
+  echo "<hr/>";
+  echo "<h2>My name is " . $name . "</h2>";
+  echo "<p>I was born in " . $yearBorn . "</p>";
+  echo "I am " . $age . " years old."
   ?>
 </body>
 </html>

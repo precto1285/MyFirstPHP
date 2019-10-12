@@ -22,11 +22,13 @@
   echo "<h2>My name is " . $name . "</h2>";
   echo "<p>I was born in " . $yearBorn . "</p>";
   echo "I am " . strtoupper($age . " years old.");
-echo "<br>";
+  echo "<br><hr><br>";
+
   echo "My name spelled Backwards: ";
   echo strtoupper($name[7]) . $name[6] . $name[5] . $name[4] . $name[3] . $name[2] . $name[1] . strtolower($name[0]);
 
-echo "<hr>";
+  echo "<br><hr><br>";
+
 // Integer is a number without any decimal
 $intNum = 456;
 echo $intNum . " is an Integer <br>";
@@ -38,9 +40,14 @@ echo $floatNum . " is a Float <br>";
 define("Bass", "Fender", true);
 echo Bass . "<br>";
 
+
+echo "<br><hr><br>";
+
 // PHP Constants with arrays:
 define("Guitar", ["Gibson", "Fender", "Ibanez", "ESP"]);
 echo Guitar[2] . "<br>";
+
+echo "<br><hr><br>";
 
 // If Else Statements:
 $eight = 8;
@@ -52,9 +59,10 @@ if($sumNum <= 15){
 else{
   echo $nine . "<br>";
 };
+echo "<br><hr><br>";
 
 // Switch Statements:
-$color = "green";
+$color = "red";
 $sentence = "Your favorite color is ";
 switch ($color) {
   case "red":
@@ -69,6 +77,37 @@ switch ($color) {
   default:
     echo $sentence . "neither red, blue, no green!"; 
 };
+echo "<br><hr><br>";
+
+// While Loops
+$x=1;
+while ($x <= 5){
+  echo "The number is: $x <br>";
+  $x++;
+};
+
+echo "<br><hr><br>";
+// Do...While Loops
+$y = 1;
+do{
+  echo "The number is $y <br>";
+  $y++;
+}while($y <= 5);
+
+echo "<br><hr><br>";
+
+// For Loops
+
+for ($x=0;$x<=15;$x++){
+  echo "The number is: $x <br>";
+};
+echo "<br><hr><br>";
+// foreach loop
+$names = array("John", "Paul", "George", "Ringo");
+foreach($names as $value){
+  echo "The Beatles Member: $value <br>";
+}
+
 
   ?>
 </body>
